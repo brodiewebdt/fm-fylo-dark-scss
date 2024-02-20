@@ -42,7 +42,7 @@
     color: var(--text-light);
     opacity: 0.8;
 
-    @include u.breakpoint(large) {
+    @include u.breakpoint(medium) {
       font-size: u.rem(16);
     }
 
