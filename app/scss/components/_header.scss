@@ -1,0 +1,56 @@
+@use '../util' as u;
+
+.header {
+  background-color: var(--header-bg);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 20px;
+
+    @include u.breakpoint(medium) {
+      padding-block: 75px;
+    }
+  }
+
+  &__homelink {
+  }
+
+  &__logo {
+    width: u.rem(80);
+
+    @include u.breakpoint(medium) {
+      width: u.rem(176);
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 24px;
+
+    @include u.breakpoint(medium) {
+      gap: 56px;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-size: u.rem(12);
+    font-weight: 400;
+    color: var(--text-light);
+    opacity: 0.8;
+
+    @include u.breakpoint(large) {
+      font-size: u.rem(16);
+    }
+
+    &:hover {
+      opacity: 1;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+  }
+}

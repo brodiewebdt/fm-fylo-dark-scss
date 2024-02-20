@@ -1,9 +1,11 @@
 :root {
-  --main-bg: hsl(0, 0%, 100%);
+  --header-bg: hsl(217, 28%, 15%);
+  --main-bg: hsl(217, 28%, 15%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --testimonial-bg: hsl(216, 31%, 18%);
   --text-dark: hsl(233, 14%, 25%);
   --text-light: hsl(0, 0%, 100%);
-  --text-link-hover: hsl(320, 85%, 41%);
-  --header-bg: hsl(232, 58%, 55%);
+  --text-link-hover: hsl(0, 0%, 100%);
   --hero-bg: hsl(232, 58%, 55%);
   --button-primary-bg: hsla(180, 100%, 42%, 1);
   --button-primary-bg-hover: hsla(180, 100%, 37%, 1);
@@ -15,8 +17,7 @@
   --button-secondary-border: hsl(0, 0%, 100%);
   --button-secondary-text: hsl(0, 0%, 100%);
   --button-secondary-text-hover: var(--hero-bg);
-  --full-width-bg: hsl(320, 85%, 41%);
-  --gradient1: hsl(250, 14%, 25%);
-  --gradient2: hsl(232, 58%, 55%);
-  --gradient3: hsl(180, 100%, 42%);
+  --error-color: hsl(0, 100%, 63%);
+  --gradient1: hsl(176, 68%, 64%);
+  --gradient2: hsl(198, 60%, 50%);
 }

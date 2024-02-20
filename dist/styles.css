@@ -12,7 +12,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   background-color: var(--main-bg);
-  color: var(--text-dark);
+  color: var(--text-light);
   margin: 0;
   padding: 0;
 }
@@ -108,11 +108,13 @@ a:active {
 }
 
 :root {
-  --main-bg: hsl(0, 0%, 100%);
+  --header-bg: hsl(217, 28%, 15%);
+  --main-bg: hsl(217, 28%, 15%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --testimonial-bg: hsl(216, 31%, 18%);
   --text-dark: hsl(233, 14%, 25%);
   --text-light: hsl(0, 0%, 100%);
-  --text-link-hover: hsl(320, 85%, 41%);
-  --header-bg: hsl(232, 58%, 55%);
+  --text-link-hover: hsl(0, 0%, 100%);
   --hero-bg: hsl(232, 58%, 55%);
   --button-primary-bg: hsla(180, 100%, 42%, 1);
   --button-primary-bg-hover: hsla(180, 100%, 37%, 1);
@@ -124,10 +126,9 @@ a:active {
   --button-secondary-border: hsl(0, 0%, 100%);
   --button-secondary-text: hsl(0, 0%, 100%);
   --button-secondary-text-hover: var(--hero-bg);
-  --full-width-bg: hsl(320, 85%, 41%);
-  --gradient1: hsl(250, 14%, 25%);
-  --gradient2: hsl(232, 58%, 55%);
-  --gradient3: hsl(180, 100%, 42%);
+  --error-color: hsl(0, 100%, 63%);
+  --gradient1: hsl(176, 68%, 64%);
+  --gradient2: hsl(198, 60%, 50%);
 }
 
 .button {
@@ -179,4 +180,64 @@ a:active {
   max-width: 70ch;
   margin-block-end: 2.5rem;
   margin-inline: auto;
+}
+
+.wrapper {
+  width: min(100% - 3rem, 80rem);
+  margin-inline: auto;
+  padding-block: 60px;
+}
+@media (min-width: 56.25em) {
+  .wrapper {
+    padding-block: 80px;
+  }
+}
+
+.header {
+  background-color: var(--header-bg);
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 20px;
+}
+@media (min-width: 43.75em) {
+  .header__wrapper {
+    padding-block: 75px;
+  }
+}
+.header__logo {
+  width: 5rem;
+}
+@media (min-width: 43.75em) {
+  .header__logo {
+    width: 11rem;
+  }
+}
+.header__links {
+  display: flex;
+  gap: 24px;
+}
+@media (min-width: 43.75em) {
+  .header__links {
+    gap: 56px;
+  }
+}
+.header__link {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-light);
+  opacity: 0.8;
+}
+@media (min-width: 56.25em) {
+  .header__link {
+    font-size: 1rem;
+  }
+}
+.header__link:hover {
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }/*# sourceMappingURL=styles.css.map */
